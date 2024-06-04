@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:NewAngularTemplate": "node dist/new-angular-template/server/server.mjs"
+    "serve:ssr:NewAngularTemplate": "node dist/new-angular-template/server/server.mjs",
+    "clean": "rimraf node_modules dist package-lock.json coverage .idea"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +40,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "rimraf": "^5.0.7",
     "typescript": "~5.4.2"
   }
 }
